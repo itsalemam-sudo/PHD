@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PHD Software — a UAE-based high-tech studio building software, games, and mobile applications from Mirdif, Dubai." />
+  <title>PHD Software — Software · Gaming · Apps · UAE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="#top" class="brand" aria-label="PHD Software home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+          <path d="M4 24 L4 8 L16 20 L28 8 L28 24" stroke="url(#lg)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="lg" x1="0" x2="32" y1="0" y2="32">
+              <stop offset="0" stop-color="#5eead4"/>
+              <stop offset="1" stop-color="#6366f1"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span class="brand-name">PHD <span class="brand-accent">Software</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary btn-sm">Start a project</a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <span class="eyebrow">
+          <span class="pulse"></span> Based in Mirdif · Dubai · UAE
+        </span>
+        <h1>
+          We build <span class="grad">software</span>,
+          <span class="grad2">games</span>, and
+          <span class="grad3">apps</span> that people actually use.
+        </h1>
+        <p class="lede">
+          PHD Software is a high-tech studio designing and shipping a portfolio of digital products —
+          from productivity tools and mobile apps to games trusted by users across the GCC and beyond.
+        </p>
+        <div class="hero-cta">
+          <a href="#products" class="btn btn-primary">See our products</a>
+          <a href="#contact" class="btn btn-ghost">Book a call →</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>7+</dt><dd>live products</dd></div>
+          <div><dt>1M+</dt><dd>combined users</dd></div>
+          <div><dt>UAE</dt><dd>Mirdif · Dubai HQ</dd></div>
+          <div><dt>24/7</dt><dd>uptime engineering</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <header class="section-head">
+        <span class="section-tag">What we do</span>
+        <h2>One team. Three disciplines. Built to compound.</h2>
+        <p>We keep engineering, design and publishing under one roof so ideas move from prototype to production without handoffs.</p>
+      </header>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </div>
+          <h3>Software Engineering</h3>
+          <p>Cloud platforms, internal tools, and mission-critical systems. Typescript, Go, Rust — whatever fits the job.</p>
+          <ul>
+            <li>SaaS platforms & APIs</li>
+            <li>Data pipelines & AI</li>
+            <li>DevOps & cloud infra</li>
+          </ul>
+        </article>
+
+        <article class="service-card featured">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><circle cx="16" cy="12" r="1"/><circle cx="18" cy="10" r="1"/>
+            </svg>
+          </div>
+          <h3>Game Development</h3>
+          <p>From casual mobile hits to competitive multiplayer. We handle design, engineering, art direction and live-ops.</p>
+          <ul>
+            <li>Unity & Unreal Engine</li>
+            <li>Real-time multiplayer</li>
+            <li>Live-ops & monetization</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="2" width="12" height="20" rx="3"/><line x1="11" y1="18" x2="13" y2="18"/>
+            </svg>
+          </div>
+          <h3>App Development</h3>
+          <p>Native iOS & Android and cross-platform apps designed for retention and shipped to store on real deadlines.</p>
+          <ul>
+            <li>Swift, Kotlin, Flutter</li>
+            <li>Design systems & UX</li>
+            <li>App Store optimization</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="products" class="products">
+      <header class="section-head">
+        <span class="section-tag">Our portfolio</span>
+        <h2>Products we own and operate.</h2>
+        <p>A growing family of applications built, launched, and maintained by the PHD Software team.</p>
+      </header>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-icon habitron" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h3l2 6 4-12 2 6h5"/></svg>
+          </div>
+          <div class="product-badge app">Health & Fitness</div>
+          <h3>Habitron Scan</h3>
+          <p>Habit-tracking companion that scans daily activity and turns it into gentle, science-backed routines.</p>
+          <div class="product-meta"><span>iOS · Android</span><span>Live</span></div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-icon pdf" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <div class="product-badge software">Productivity</div>
+          <h3>convertorpdf</h3>
+          <p>All-in-one PDF toolbox — convert, merge, split, compress, and sign documents from any device.</p>
+          <div class="product-meta"><span>iOS · Web</span><span>Live</span></div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-icon talents" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="4"/><path d="M2 21v-1a6 6 0 0 1 6-6h2a6 6 0 0 1 6 6v1"/><path d="M17 3a4 4 0 0 1 0 8"/><path d="M22 21v-1a6 6 0 0 0-3-5"/></svg>
+          </div>
+          <div class="product-badge app">Careers</div>
+          <h3>Dubai Talents</h3>
+          <p>A hiring marketplace built for the UAE — connecting local talent with the region's fastest-growing employers.</p>
+          <div class="product-meta"><span>iOS · Android · Web</span><span>Live</span></div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-icon ember" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 4 5 5 5 10a5 5 0 0 1-10 0c0-3 2-4 2-7 0-1 1-2 3-3z"/></svg>
+          </div>
+          <div class="product-badge game">Social</div>
+          <h3>Emberdate</h3>
+          <p>Modern dating app with slow-burn matches, verified profiles, and a strong emphasis on real-world meetups.</p>
+          <div class="product-meta"><span>iOS · Android</span><span>Live</span></div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-icon paw" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="9" r="2"/><circle cx="10" cy="5" r="2"/><circle cx="14" cy="5" r="2"/><circle cx="18" cy="9" r="2"/><path d="M8 16c0-3 2-4 4-4s4 1 4 4-2 5-4 5-4-2-4-5z"/></svg>
+          </div>
+          <div class="product-badge app">Pets</div>
+          <h3>Only Paw</h3>
+          <p>Everyday care companion for pet parents — reminders, vet records, and playdates in one clean app.</p>
+          <div class="product-meta"><span>iOS · Android</span><span>Live</span></div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-icon paws" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="9" r="2"/><circle cx="10" cy="5" r="2"/><circle cx="14" cy="5" r="2"/><circle cx="18" cy="9" r="2"/><path d="M8 16c0-3 2-4 4-4s4 1 4 4-2 5-4 5-4-2-4-5z"/></svg>
+          </div>
+          <div class="product-badge app">Community</div>
+          <h3>onlypaws</h3>
+          <p>A social network for pet owners — share moments, discover local pet spots, and connect with fellow parents.</p>
+          <div class="product-meta"><span>iOS · Android</span><span>Live</span></div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-icon vpn" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>
+          </div>
+          <div class="product-badge software">Privacy</div>
+          <h3>VPN Panda</h3>
+          <p>Fast, no-log VPN with servers across the globe. One-tap security for browsing, streaming, and travel.</p>
+          <div class="product-meta"><span>iOS · Android · Desktop</span><span>Live</span></div>
+        </article>
+
+        <article class="product-card more">
+          <div class="product-icon more-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+          <div class="product-badge more-badge">Portfolio</div>
+          <h3>…and more in the works</h3>
+          <p>New products ship from the studio every quarter. Want an early look at what's next?</p>
+          <div class="product-meta"><span><a href="#contact" class="more-link">Talk to us →</a></span><span>Ongoing</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-grid">
+        <div class="about-copy">
+          <span class="section-tag">About PHD Software</span>
+          <h2>A studio out of Mirdif, shipping globally.</h2>
+          <p>
+            PHD Software is a multidisciplinary team of engineers, designers and product leads building a growing portfolio of applications from our HQ at
+            <strong>Mirdif — 105, Dubai, UAE</strong>.
+          </p>
+          <p>
+            Our advantage is vertical: we design, engineer, publish, and operate every product ourselves. That means faster iteration, honest telemetry, and a team that owns outcomes — not just tickets.
+          </p>
+          <div class="about-tags">
+            <span>Product engineering</span>
+            <span>Live-ops</span>
+            <span>AI/ML</span>
+            <span>UX research</span>
+            <span>Publishing</span>
+          </div>
+        </div>
+        <aside class="about-card">
+          <h3>Why teams pick us</h3>
+          <ul class="check-list">
+            <li>Own P&L on 12+ live products — we know what it takes to ship.</li>
+            <li>In-house design, engineering, QA, and live-ops.</li>
+            <li>Regional pricing without regional shortcuts.</li>
+            <li>Ship on fixed timelines with senior engineers day one.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-inner">
+        <div class="contact-copy">
+          <span class="section-tag">Get in touch</span>
+          <h2>Have an idea? Let's build it together.</h2>
+          <p>We reply to every serious enquiry within one business day. Prefer to drop by? Our studio door in Mirdif is open on weekdays.</p>
+
+          <div class="contact-details">
+            <div>
+              <h4>Studio</h4>
+              <p>Mirdif — 105<br />Dubai, United Arab Emirates</p>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:hello@phdsoftware.com">hello@phdsoftware.com</a></p>
+            </div>
+            <div>
+              <h4>Hours</h4>
+              <p>Sun – Thu · 9:00 – 18:00 GST</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Work email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="topic">I'm interested in</label>
+            <select id="topic" name="topic">
+              <option>Custom software</option>
+              <option>Game development</option>
+              <option>Mobile app</option>
+              <option>Partnership / investment</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Tell us about your project</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send message</button>
+          <p class="form-note" hidden>Thanks — we'll reply within one business day.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <span class="brand-name">PHD <span class="brand-accent">Software</span></span>
+        <p class="footer-tag">Software · Gaming · Apps · UAE</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="copy">© <span id="year"></span> PHD Software · Mirdif 105, Dubai, UAE · <a href="https://phdsoftware.com" style="color:inherit">phdsoftware.com</a></p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
