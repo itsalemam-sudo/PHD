@@ -1,6 +1,6 @@
 # PHD Software — Website
 
-A single-page marketing site for **PHD Software** ([phdsoftware.com](https://phdsoftware.com)),
+A single-page marketing site for **PHD Software** ([phdsowftware.com](https://phdsowftware.com)),
 a UAE-based high-tech studio in Mirdif (105), Dubai, that builds software, games,
 and mobile applications. The portfolio section lists our shipped products:
 Habitron Scan, convertorpdf, Dubai Talents, Emberdate, Only Paw, onlypaws, and VPN Panda.

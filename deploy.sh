@@ -4,12 +4,12 @@
 # Usage (as root):
 #   curl -fsSL https://raw.githubusercontent.com/itsalemam-sudo/PHD/claude/high-tech-company-website-dnjn5t/deploy.sh | bash
 #
-# Safe to re-run. Only touches phdsoftware.com's server block and docroot;
+# Safe to re-run. Only touches phdsowftware.com's server block and docroot;
 # leaves other nginx sites (ember, marmaragold, etc.) untouched.
 
 set -euo pipefail
 
-DOMAIN="phdsoftware.com"
+DOMAIN="phdsowftware.com"
 REPO_URL="https://github.com/itsalemam-sudo/PHD.git"
 BRANCH="claude/high-tech-company-website-dnjn5t"
 EMAIL="hello@${DOMAIN}"
@@ -20,6 +20,14 @@ warn() { printf "\n\033[1;33m!!\033[0m  %s\n" "$*" >&2; }
 die() { printf "\n\033[1;31mxx\033[0m  %s\n" "$*" >&2; exit 1; }
 
 [[ $EUID -eq 0 ]] || die "Run as root (sudo bash deploy.sh)."
+
+# Clean up an older, misnamed deploy (missing 'w') if we made one earlier.
+OLD_DOMAIN="phdsoftware.com"
+if [[ -e "/etc/nginx/sites-enabled/${OLD_DOMAIN}" || -e "/etc/nginx/sites-available/${OLD_DOMAIN}" || -d "/var/www/${OLD_DOMAIN}" ]]; then
+  log "Removing stale ${OLD_DOMAIN} config from earlier attempt"
+  rm -f "/etc/nginx/sites-enabled/${OLD_DOMAIN}" "/etc/nginx/sites-available/${OLD_DOMAIN}"
+  rm -rf "/var/www/${OLD_DOMAIN}"
+fi
 
 log "Installing prerequisites"
 export DEBIAN_FRONTEND=noninteractive
